@@ -50,8 +50,12 @@ if __name__ == "__main__":
     ddfs = DDFS()
     tags = ddfs.list("enriched:%s" % day)
     job_name = "Tweet_filter"
+    params = {"venezuela": "venezuela"}
     inputs = [("tag://%s") for tag in tags]
-    job = TweetFilter().run(input=inputs, partitions=10, name=job_name)
+    job = TweetFilter().run(input=inputs,
+                            partitions=10,
+                            params=params,
+                            name=job_name)
     result = job.wait(show=False)
     out_file = "filtered_tweet.txt"
     with open(out_file, "w") as ow:
