@@ -8,7 +8,6 @@ import re
 import logging
 from disco.core import Job
 import json
-from unidecode import unidecode
 from datetime import datetime, timedelta
 
 EXCEPT_CHAR = "@#$:/.-&"
@@ -19,17 +18,6 @@ def tokenize(content):
     content = content.lower()
     tokens = re.split(rule, content)
     return tokens
-
-
-def normalize_str(s):
-    try:
-        if s is None:
-            s = ""
-        if isinstance(s, str):
-            return unidecode(s.decode('utf-8').strip()).lower()
-    except UnicodeDecodeError:
-        return s
-    return unidecode(unicode(s).strip()).lower()
 
 
 class TweetFilter(Job):
@@ -50,7 +38,7 @@ class TweetFilter(Job):
                         #match the sentence
                         find = re.search(r'\b(%s)\b' % keyword, content, re.IGNORECASE)
                     else:
-                        if keyword in tokens:
+                        if keyword.lower() in tokens:
                             find = keyword
                     if find:
                         company = keywords[keyword]
@@ -127,6 +115,7 @@ if __name__ == "__main__":
     job_name = "Tweet_filter"
     params = json.load(open(keyword_file))
     inputs = [("tag://%s") % tag for tag in tags]
+    print "Days[%d], Files[%d]" % (len(days), len(inputs))
     job = TweetFilter().run(input=inputs,
                             partitions=len(days),
                             params=params,
