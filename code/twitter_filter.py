@@ -8,7 +8,8 @@ import re
 import logging
 from disco.core import Job
 import json
-import worker
+from unidecode import unidecode
+from datetime import datetime, timedelta
 
 EXCEPT_CHAR = "@#$:/.-&"
 
@@ -22,13 +23,14 @@ def tokenize(content):
 
 def normalize_str(s):
     try:
-        if s == None:
+        if s is None:
             s = ""
         if isinstance(s, str):
             return unidecode(s.decode('utf-8').strip()).lower()
     except UnicodeDecodeError:
         return s
     return unidecode(unicode(s).strip()).lower()
+
 
 class TweetFilter(Job):
     @staticmethod
@@ -62,7 +64,8 @@ class TweetFilter(Job):
     @staticmethod
     def map_reader(stream, size, url, params):
         """Input stream for Twitter data"""
-        import struct, cStringIO, zlib
+        import struct
+        import zlib
         data_format = "<qQIQQQ"
         data_length = struct.calcsize(data_format)
         offset = 0
@@ -71,16 +74,16 @@ class TweetFilter(Job):
             header = stream.read(len(exp_value))
             if not header:
                 return
-                raise DataError("Not a valid twitter data chunk at %s size=%d" % (header, size), url)
+                raise Exception("Not a valid twitter data chunk at %s size=%d" % (header, size), url)
 
             if header != exp_value:
-                raise DataError("Not a valid twitter data chunk at %s" % url, url)
+                raise Exception("Not a valid twitter data chunk at %s" % url, url)
 
             try:
                 time, hunk_size, checksum, res1, res2, res3 =\
                     struct.unpack(data_format, stream.read(data_length))
             except:
-                raise DataError("Truncated data at %d bytes" % offset, url)
+                raise Exception("Truncated data at %d bytes" % offset, url)
 
             if not hunk_size:
                 return
@@ -92,10 +95,19 @@ class TweetFilter(Job):
                 if checksum != (zlib.crc32(data) & 0xFFFFFFFF):
                     raise ValueError("Checksum does not match")
             except (ValueError, zlib.error), e:
-                raise DataError("Corrupted data between bytes %d-%d: %s" % (offset, offset + hunk_size, e), url)
+                raise Exception("Corrupted data between bytes %d-%d: %s" % (offset, offset + hunk_size, e), url)
             offset += hunk_size + data_length
             yield time, data
 
+
+def get_days(s_date, e_date):
+    cur_date = s_date
+    days = []
+    while cur_date <= e_date:
+        days.append(cur_date)
+        cur_date = datetime.strptime(cur_date, "%Y-%m-%d") + timedelta(days=1)
+        cur_date = cur_date.strftime("%Y-%m-%d")
+    return days
 
 if __name__ == "__main__":
     from twitter_filter import TweetFilter
@@ -103,18 +115,24 @@ if __name__ == "__main__":
     from disco.ddfs import DDFS
     import sys
 
-    day = sys.argv[1]
+    start_day = sys.argv[1]
+    end_day = sys.argv[2]
+    keyword_file = sys.argv[3]
+
     ddfs = DDFS()
-    tags = ddfs.list("enriched:%s" % day)
+    days = get_days(start_day, end_day)
+    tags = []
+    for day in days:
+        tags = tags + ddfs.list("enriched:%s" % day)
     job_name = "Tweet_filter"
-    params = {"venezuela avanza": "venezuela"}
-    inputs = [("tag://%s") % tag for tag in tags[0:2]]
+    params = json.load(open(keyword_file))
+    inputs = [("tag://%s") % tag for tag in tags]
     job = TweetFilter().run(input=inputs,
-                            partitions=10,
+                            partitions=len(days),
                             params=params,
                             name=job_name)
     result = job.wait(show=False)
-    out_file = "filtered_tweet_3.txt"
+    out_file = "filtered_tweet_company.txt"
     with open(out_file, "w") as ow:
         for k, v in result_iterator(result):
             ow.write(v + "\n")
