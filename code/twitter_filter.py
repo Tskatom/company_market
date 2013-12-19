@@ -41,7 +41,7 @@ class TweetFilter(Job):
             logging.info("Exception: [%s]" % e)
 
 if __name__ == "__main__":
-    #from twitter_filter import TweetFilter
+    from twitter_filter import TweetFilter
     from disco.core import result_iterator
     import sys
     from disco.ddfs import DDFS
