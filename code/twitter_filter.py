@@ -51,7 +51,7 @@ if __name__ == "__main__":
     tags = ddfs.list("enriched:%s" % day)
     job_name = "Tweet_filter"
     params = {"venezuela": "venezuela"}
-    inputs = [("tag://%s") for tag in tags]
+    inputs = [("tag://%s") % tag for tag in tags]
     job = TweetFilter().run(input=inputs,
                             partitions=10,
                             params=params,
