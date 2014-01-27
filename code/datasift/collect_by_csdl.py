@@ -49,7 +49,7 @@ class Env:
 
         self.display_historic_details(historic)
 
-        params = "method=POST delivery_frequency=10 url=http://38.68.232.222:8787 auth.type=none"
+        params = "method=POST delivery_frequency=10 url=http://38.68.233.95:8787 auth.type=none"
         output_type= "http"
         push_def = self._user.create_push_definition()
         push_def.set_output_type(output_type)

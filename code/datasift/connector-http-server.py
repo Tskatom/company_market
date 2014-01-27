@@ -2,12 +2,19 @@ import tornado.ioloop
 import tornado.web
 import time
 
+global COUNT
+COUNT = 0
+
 class MainHandler(tornado.web.RequestHandler):
 
     def post(self):
-
+        global COUNT
         ts = str(int(time.time()))
         of = "json"
+        COUNT += 1
+        print "This is the [%d] post request!!" % COUNT
+        
+        print "The content is [--- %s  ---]" % self.request.body
 
         if self.request.body == '{}':
                 print 'Got {} from DataSift!'
@@ -36,8 +43,6 @@ class MainHandler(tornado.web.RequestHandler):
 
                 f.write(str(self.request.body))
                 f.close
-
-        print self.request.headers
 
         self.set_status(200)
         self.write('{"success": true}')

@@ -1,0 +1,1 @@
+twitter.place.country_code == "US" and ( twitter.text contains "$msft, microsoft" or twitter.hashtags in "msft, microsoft")
