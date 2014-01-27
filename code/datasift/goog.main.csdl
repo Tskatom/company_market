@@ -1,0 +1,1 @@
+twitter.place.country_code == "US" and (twitter.text contains "$goog, google" or twitter.hashtags in "goog, google")

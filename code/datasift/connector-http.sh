@@ -1,0 +1,14 @@
+curl -X POST 'https://api.datasift.com/v1/push/create' \
+-d 'name=connectorhttp' \
+-d 'hash=42d388f8b1db997faaf7dab487f11290' \
+-d 'output_type=http' \
+-d 'output_params.method=post' \
+-d 'output_params.url=38.68.232.222:8787' \
+-d 'output_params.use_gzip' \
+-d 'output_params.delivery_frequency=60' \
+-d 'output_params.max_size=10485760' \
+-d 'output_params.verify_ssl=false' \
+-d 'output_params.auth.type=none' \
+-d 'output_params.auth.username=YourHTTPServerUsername' \
+-d 'output_params.auth.password=YourHTTPServerPassword' \
+-H 'Authorization: embersnaren:e6d9363cf263a495b858cb0fc27b33f0'
