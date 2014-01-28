@@ -20,7 +20,7 @@ from threading import Thread
 from subprocess import call
 import time
 
-logging.basicConfig(filename='mulththread_topsy.log', level=logging.INFO)
+logging.basicConfig(filename='multithread_topsy.log', level=logging.INFO)
 
 class Spider(Thread):
 	def __init__(self, queue):
