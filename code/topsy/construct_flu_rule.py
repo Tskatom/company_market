@@ -8,10 +8,12 @@ import sys
 import os
 
 rule = set('"'+item.strip()+'"' for item in open(sys.argv[1]))
+s_rule = set('"'+item.strip()+'"' for item in open(sys.argv[2]))
 
 with open("Flu_rule.txt", "w") as w:
     for item in rule:
-        w.write("%s|%s\n" % (item.replace('"', "").replace(" ","_"), item))
+        delta = 24 if item not in s_rule else 6
+        w.write("%s|%d|%s\n" % (item.replace('"', "").replace(" ","_"), delta, item))
 
 if __name__ == "__main__":
     pass
