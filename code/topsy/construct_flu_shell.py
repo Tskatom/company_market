@@ -27,12 +27,12 @@ while cursor <= end_month:
     end = "%s-%d" %(cursor, calendar.monthrange(year, month)[1])
 
     out = os.path.join(sys.argv[1], cursor.replace("-", ""))
-    command = "python multithread_topsy.py %s Flu_rule.txt %s %s" % (out, start, end)
+    command = "python multithread_topsy.py %s $1 %s %s" % (out, start, end)
     cursor = add_month(cursor, 1)
     shells.append(command)
 
 shells.sort(reverse=True)
-with open("start_ingest_flu.sh", "w") as w:
+with open("new_start_ingest_flu.sh", "w") as w:
     for command in shells:
         w.write(command + "\n")
 
