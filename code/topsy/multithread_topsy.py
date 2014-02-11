@@ -16,7 +16,7 @@ import os
 import sys
 from datetime import datetime, timedelta
 import Queue
-from threading import Thread 
+from threading import Thread
 from subprocess import call
 import time
 
@@ -63,7 +63,7 @@ def create_url(start, end, rule):
 	param["include_metrics"] = 1
 	param["q"] = rule
 
-	informat = "%Y-%m-%d"
+	informat = "%Y%m%d%H%M%S"
 	outformat = "%s"
 	start_epco = datetime.strptime(start, informat).strftime(outformat)
 	end_epco = datetime.strptime(end, informat).strftime(outformat)
@@ -74,15 +74,21 @@ def create_url(start, end, rule):
 	target_url = _URL + urllib.urlencode(param)
 	return target_url
 
-def create_task(start, end, rule, company, out_dir, queue):
+def create_task(start, end, rule, company, out_dir, queue, delta=24):
 	""""
 	start, end: yyyy-mm-dd
 	rule: query string like "'3D Systems' OR $DDD"
 	company: the stock symbol
+    out_dir: the output directory
+    queue: the queue used to schedule the task
+    delta: take hours as unit
 	"""
-	cursor = start
+    start = "%s000000" % start.replace("-", "")
+    end = "%s235959" % end.replace("-", "")
+    cursor = start
+
 	while cursor < end:
-		cursor = (datetime.strptime(start, "%Y-%m-%d") + timedelta(days=1)).strftime("%Y-%m-%d")
+        cursor = (datetime.strptime(start, "%Y%m%d%H%M%S") + timedelta(hours=delta)).strftime("%Y%m%d%H%M%S")
 		if cursor > end:
 			cursor = end
 		url = create_url(start, cursor, rule)
@@ -100,7 +106,7 @@ def main():
 	#rule_files = "/home/weiwang/workspace/data/company_rules.txt"
 	start = "2014-01-01"
 	end = "2014-01-05"
-	#create threads		
+	#create threads
 	for i in range(5):
 		t = Spider(queue)
 		t.setDaemon(True)
@@ -112,8 +118,8 @@ def main():
 		for line in rf:
 			name, rule = line.strip().split("|")
 			create_task(start, end, rule, name, out_dir, queue)
-	
+
 	queue.join()
 
 if __name__ == "__main__":
-	main()	
+	main()
