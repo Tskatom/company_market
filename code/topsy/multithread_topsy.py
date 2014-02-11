@@ -75,13 +75,13 @@ def create_url(start, end, rule):
 	return target_url
 
 def create_task(start, end, rule, company, out_dir, queue, delta=24):
-	""""
-	start, end: yyyy-mm-dd
-	rule: query string like "'3D Systems' OR $DDD"
-	company: the stock symbol
-    out_dir: the output directory
-    queue: the queue used to schedule the task
-    delta: take hours as unit
+	"""
+	    start, end: yyyy-mm-dd
+	    rule: query string like "'3D Systems' OR $DDD"
+	    company: the stock symbol
+        out_dir: the output directory
+        queue: the queue used to schedule the task
+        delta: take hours as unit
 	"""
     start = "%s000000" % start.replace("-", "")
     end = "%s235959" % end.replace("-", "")
@@ -95,6 +95,7 @@ def create_task(start, end, rule, company, out_dir, queue, delta=24):
 		output = os.path.join(out_dir, "%s_%s_%s" % (company, start, cursor))
 		task = {"url": url, "output": output}
 		queue.put(task)
+        print start, end
 		start = cursor
 
 def main():
@@ -110,14 +111,14 @@ def main():
 	for i in range(20):
 		t = Spider(queue)
 		t.setDaemon(True)
-		t.start()
+        #t.start()
 
 	#push tasks to the queue
 	tasks = []
 	with open(rule_files) as rf:
 		for line in rf:
-			name, rule = line.strip().split("|")
-			create_task(start, end, rule, name, out_dir, queue)
+			name, delta, rule = line.strip().split("|")
+			create_task(start, end, rule, name, out_dir, queue, int(delta))
 
 	queue.join()
 
