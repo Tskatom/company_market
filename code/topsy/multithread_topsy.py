@@ -105,9 +105,9 @@ def main():
 	#out_dir = "/home/weiwang/workspace/data"
 	#rule_files = "/home/weiwang/workspace/data/company_rules.txt"
 	start = "2014-01-01"
-	end = "2014-01-05"
+	end = "2014-01-31"
 	#create threads
-	for i in range(5):
+	for i in range(20):
 		t = Spider(queue)
 		t.setDaemon(True)
 		t.start()
