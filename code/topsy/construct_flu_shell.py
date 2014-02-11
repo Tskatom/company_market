@@ -26,7 +26,7 @@ while cursor <= end_month:
     start = "%s-%s" % (cursor, "01")
     end = "%s-%d" %(cursor, calendar.monthrange(year, month)[1])
 
-    out = os.path.join(sys.argv[1], cursor)
+    out = os.path.join(sys.argv[1], cursor.replace("-", ""))
     command = "python multithread_topsy.py %s Flu_rule.txt %s %s" % (out, start, end)
     cursor = add_month(cursor, 1)
     shells.append(command)
