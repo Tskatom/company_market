@@ -82,7 +82,7 @@ def create_task(start, end, rule, company, out_dir, queue):
 	"""
 	cursor = start
 	while cursor < end:
-		cursor = (datetime.strptime(start, "%Y-%m-%d") + timedelta(days=15)).strftime("%Y-%m-%d")
+		cursor = (datetime.strptime(start, "%Y-%m-%d") + timedelta(days=1)).strftime("%Y-%m-%d")
 		if cursor > end:
 			cursor = end
 		url = create_url(start, cursor, rule)
@@ -98,10 +98,10 @@ def main():
 
 	#out_dir = "/home/weiwang/workspace/data"
 	#rule_files = "/home/weiwang/workspace/data/company_rules.txt"
-	start = "2007-01-01"
-	end = "2013-12-31"
+	start = "2014-01-01"
+	end = "2014-01-05"
 	#create threads		
-	for i in range(20):
+	for i in range(5):
 		t = Spider(queue)
 		t.setDaemon(True)
 		t.start()
