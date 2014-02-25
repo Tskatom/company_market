@@ -8,7 +8,10 @@ import sys
 import os
 
 rule = set('"'+item.strip()+'"' for item in open(sys.argv[1]))
-s_rule = set('"'+item.strip()+'"' for item in open(sys.argv[2]))
+if len(sys.argv) > 2:
+    s_rule = set('"'+item.strip()+'"' for item in open(sys.argv[2]))
+else:
+    s_rule = set()
 
 with open("Flu_rule.txt", "w") as w:
     for item in rule:

@@ -110,12 +110,15 @@ def main():
     start = sys.argv[3]
     end = sys.argv[4]
 
+    if not os.path.exists(out_dir):
+        os.mkdir(out_dir)
+
     #out_dir = "/home/weiwang/workspace/data"
     #rule_files = "/home/weiwang/workspace/data/company_rules.txt"
     #start = "2014-01-01"
     #end = "2014-01-31"
     #create threads
-    for i in range(30):
+    for i in range(4):
         t = Spider(queue)
         t.setDaemon(True)
         t.start()
