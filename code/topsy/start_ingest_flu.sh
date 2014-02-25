@@ -1,16 +1,3 @@
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201401 Flu_rule.txt 2014-01-01 2014-01-31
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201312 Flu_rule.txt 2013-12-01 2013-12-31
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201311 Flu_rule.txt 2013-11-01 2013-11-30
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201310 Flu_rule.txt 2013-10-01 2013-10-31
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201309 Flu_rule.txt 2013-09-01 2013-09-30
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201308 Flu_rule.txt 2013-08-01 2013-08-31
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201307 Flu_rule.txt 2013-07-01 2013-07-31
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201306 Flu_rule.txt 2013-06-01 2013-06-30
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201305 Flu_rule.txt 2013-05-01 2013-05-31
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201304 Flu_rule.txt 2013-04-01 2013-04-30
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201303 Flu_rule.txt 2013-03-01 2013-03-31
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201302 Flu_rule.txt 2013-02-01 2013-02-28
-python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201301 Flu_rule.txt 2013-01-01 2013-01-31
 python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201212 Flu_rule.txt 2012-12-01 2012-12-31
 python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201211 Flu_rule.txt 2012-11-01 2012-11-30
 python multithread_topsy.py /home/tskatom/workspace/data/zhaoliang/201210 Flu_rule.txt 2012-10-01 2012-10-31
