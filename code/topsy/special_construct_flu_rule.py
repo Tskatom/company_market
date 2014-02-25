@@ -8,15 +8,12 @@ import sys
 import os
 
 rule = set('"'+item.strip()+'"' for item in open(sys.argv[1]))
-if len(sys.argv) > 2:
-    s_rule = set('"'+item.strip()+'"' for item in open(sys.argv[2]))
-else:
-    s_rule = set()
+s_rule = set('"'+item.strip()+'"' for item in open(sys.argv[2]))
 
-with open("Flu_rule.txt", "w") as w:
+with open("Special_flu_rule.txt", "w") as w:
     for item in rule:
-        delta = 24 
-        if item in s_rule:
+        delta = 1 
+        if item not in s_rule:
             continue
         w.write("%s|%d|%s\n" % (item.replace('"', "").replace(" ","_"), delta, item))
 
