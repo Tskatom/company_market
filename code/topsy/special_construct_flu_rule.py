@@ -10,12 +10,16 @@ import os
 rule = set('"'+item.strip()+'"' for item in open(sys.argv[1]))
 s_rule = set('"'+item.strip()+'"' for item in open(sys.argv[2]))
 
-with open("Special_flu_rule.txt", "w") as w:
+print rule
+
+print s_rule
+with open("Special_flu_rule.txt", "w") as sw, open("Normal_flu_rule.txt", "w") as nw:
     for item in rule:
         delta = 1 
         if item not in s_rule:
-            continue
-        w.write("%s|%d|%s\n" % (item.replace('"', "").replace(" ","_"), delta, item))
+            nw.write("%s|%d|%s\n" % (item.replace('"', "").replace(" ", "_"), 24, item))
+        else:
+            sw.write("%s|%d|%s\n" % (item.replace('"', "").replace(" ","_"), delta, item))
 
 if __name__ == "__main__":
     pass

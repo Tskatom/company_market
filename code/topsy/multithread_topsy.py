@@ -110,6 +110,10 @@ def main():
     start = sys.argv[3]
     end = sys.argv[4]
 
+    if len(sys.argv) > 5:
+        num_threads = int(sys.argv[5])
+    else:
+        num_threads = 30
     if not os.path.exists(out_dir):
         os.mkdir(out_dir)
 
@@ -118,7 +122,7 @@ def main():
     #start = "2014-01-01"
     #end = "2014-01-31"
     #create threads
-    for i in range(4):
+    for i in range(num_threads):
         t = Spider(queue)
         t.setDaemon(True)
         t.start()
