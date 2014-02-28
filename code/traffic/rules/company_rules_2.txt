@@ -1,0 +1,3 @@
+SAPE|"Sapient" OR $SAPE
+BYD|"Boyd Gaming" OR $BYD
+MPWR|"Monolithic Power" OR $MPWR
