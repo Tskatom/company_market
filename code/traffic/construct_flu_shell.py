@@ -9,7 +9,7 @@ import os
 from datetime import timedelta, datetime
 import calendar
 
-start_month = "2011-01"
+start_month = "2013-01"
 end_month = "2014-01"
 
 def add_month(year_month, num):
@@ -32,7 +32,7 @@ while cursor <= end_month:
     shells.append(command)
 
 shells.sort(reverse=True)
-with open("start_ingest_flu.sh", "w") as w:
+with open("start_ingest_traffic.sh", "w") as w:
     for command in shells:
         w.write(command + "\n")
 
