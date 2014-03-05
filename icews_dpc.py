@@ -116,7 +116,7 @@ class Icews:
 
                 #query the previous embers_id
                 location = '["%s", "-", "-"]' % country
-                query_sql = "select date, embersId from warnings where eventType='%s' and eventDate='%s' and location='%s' " % (self.event_type, eventDate, location)
+                query_sql = "select * from warnings where eventType='%s' and eventDate='%s' and location='%s' " % (self.event_type, eventDate, location)
                 rs = domain.select(query_sql)
                 previous_warnings = []
                 for r in rs:
@@ -212,11 +212,7 @@ class DPC:
 
                 #query the previous embers_id
                 location = '["%s", "-", "-"]' % country
-                query_sql = "select date, embersId from warnings where eventType='%s' and eventDate='%s' and location='%s' " % (self.event_type, eventDate, location)
-                rs = domain.select(query_sql)
-                #query the previous embers_id
-                location = '["%s", "-", "-"]' % country
-                query_sql = "select date, embersId from warnings where eventType='%s' and eventDate='%s' and location='%s' " % (self.event_type, eventDate, location)
+                query_sql = "select * from warnings where eventType='%s' and eventDate='%s' and location='%s' " % (self.event_type, eventDate, location)
                 rs = domain.select(query_sql)
                 previous_warnings = []
                 for r in rs:
