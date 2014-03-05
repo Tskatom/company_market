@@ -1,0 +1,402 @@
+DDD|'3D Systems' OR $DDD
+AAN|'Aaron's' OR $AAN
+ACIW|'ACI Worldwide' OR $ACIW
+AYI|'Acuity Brands' OR $AYI
+ACXM|'Acxiom' OR $ACXM
+ADTN|'ADTRAN' OR $ADTN
+AAP|'Advance Auto Parts' OR $AAP
+AMD|'Advanced Micro Devices' OR $AMD
+ADVS|'Advent Software' OR $ADVS
+ACM|'AECOM Technology' OR $ACM
+ARO|'Aeropostale' OR $ARO
+AMG|'Affiliated Managers Group' OR $AMG
+AGCO|'AGCO Corp' OR $AGCO
+ALK|'Alaska Air Group' OR $ALK
+ALB|'Albemarle' OR $ALB
+ALEX|'Alexander & Baldwin' OR $ALEX
+ARE|'Alexandria Real Estate Equit' OR $ARE
+Y|'Alleghany' OR $Y
+ADS|'Alliance Data Systems' OR $ADS
+LNT|'Alliant Energy' OR $LNT
+ATK|'Alliant Techsystems' OR $ATK
+MDRX|'Allscripts Healthcare Soluti' OR $MDRX
+ANR|'Alpha Natural Resources' OR $ANR
+AMCX|'AMC Networks' OR $AMCX
+ACC|'American Campus Communities' OR $ACC
+AEO|'American Eagle Outfitters' OR $AEO
+AFG|'American Financial Group' OR $AFG
+ANN|'Ann Inc' OR $ANN
+ANSS|'ANSYS' OR $ANSS
+AOL|'AOL Inc' OR $AOL
+APOL|'Apollo Group' OR $APOL
+AINV|'Apollo Investment' OR $AINV
+ATR|'AptarGroup' OR $ATR
+WTR|'Aqua America' OR $WTR
+ACI|'Arch Coal' OR $ACI
+ARW|'Arrow Electronics' OR $ARW
+AJG|'Arthur J Gallagher & Co' OR $AJG
+ASNA|'Ascena Retail Group' OR $ASNA
+ASH|'Ashland' OR $ASH
+AHL|'Aspen Insurance Holdings Ltd' OR $AHL
+ASBC|'Associated Banc-' OR $ASBC
+AF|'Astoria Financial' OR $AF
+ATML|'Atmel' OR $ATML
+ATO|'Atmos Energy' OR $ATO
+ATW|'Atwood Oceanics' OR $ATW
+AVT|'Avnet' OR $AVT
+BEAV|'B/E Aerospace' OR $BEAV
+BYI|'Bally Technologies' OR $BYI
+BXS|'BancorpSouth' OR $BXS
+BOH|'Bank of Hawaii' OR $BOH
+BIG|'Big Lots' OR $BIG
+BBG|'Bill Barrett' OR $BBG
+BIO|'Bio-Rad Laboratories-A' OR $BIO
+BMR|'BioMed Realty Trust' OR $BMR
+BKH|'Black Hills' OR $BKH
+BOBE|'Bob Evans Farms' OR $BOBE
+BRE|'BRE Properties' OR $BRE
+EAT|'Brinker International' OR $EAT
+BR|'Broadridge Financial Solutio' OR $BR
+BRO|'Brown & Brown' OR $BRO
+CAB|'Cabela's' OR $CAB
+CBT|'Cabot' OR $CBT
+CDNS|'Cadence Design Sys' OR $CDNS
+CPT|'Camden Property Trust' OR $CPT
+CRR|'Carbo Ceramics' OR $CRR
+CSL|'Carlisle Cos' OR $CSL
+CRS|'Carpenter Technology' OR $CRS
+CRI|'Carters' OR $CRI
+CATY|'Cathay General Bancorp' OR $CATY
+CBOE|'CBOE Holdings' OR $CBOE
+CRL|'Charles River Laboratories' OR $CRL
+CAKE|'Cheesecake Factory Inc/The' OR $CAKE
+CHS|'Chico's Fas' OR $CHS
+CHD|'Church & Dwight Co' OR $CHD
+CIEN|'Ciena' OR $CIEN
+XEC|'Cimarex Energy Co' OR $XEC
+CNK|'Cinemark Holdings' OR $CNK
+CYN|'City National' OR $CYN
+CLC|'CLARCOR' OR $CLC
+CLH|'Clean Harbors' OR $CLH
+CNL|'CLECO Coporation' OR $CNL
+CBSH|'Commerce Bancshares' OR $CBSH
+CMC|'Commercial Metals Co' OR $CMC
+CYH|'Community Health Systems' OR $CYH
+CVLT|'Commvault Systems' OR $CVLT
+CMP|'Compass Minerals Internation' OR $CMP
+CPWR|'Compuware' OR $CPWR
+CNQR|'Concur Technologies' OR $CNQR
+CVG|'Convergys' OR $CVG
+COO|'Cooper Companies' OR $COO
+CNW|'Con-way' OR $CNW
+CPRT|'Copart' OR $CPRT
+CLGX|'CoreLogic' OR $CLGX
+CEB|'Corporate Executive Board Co' OR $CEB
+OFC|'Corporate Office Properties' OR $OFC
+CXW|'Corrections Corp of America' OR $CXW
+CVD|'Covance' OR $CVD
+CR|'Crane Co' OR $CR
+CREE|'Cree' OR $CREE
+CST|'CST Brands' OR $CST
+CBST|'Cubist Pharmaceuticals' OR $CBST
+CFR|'Cullen/Frost Bankers' OR $CFR
+CY|'Cypress Semiconductor' OR $CY
+CYT|'Cytec Industries' OR $CYT
+DF|'Dean Foods Co' OR $DF
+DST|'DST Systems' OR $DST
+DECK|'Deckers Outdoor' OR $DECK
+DLX|'Deluxe' OR $DLX
+DV|'DeVry' OR $DV
+DKS|'Dick's Sporting Goods' OR $DKS
+DBD|'Diebold' OR $DBD
+DPZ|'Domino's Pizza' OR $DPZ
+UFS|'Domtar' OR $UFS
+DCI|'Donaldson Co' OR $DCI
+RRD|'Donnelley R.R. & Sons' OR $RRD
+DWA|'DreamWorks Animation SKG' OR $DWA
+DRC|'Dresser-Rand Group' OR $DRC
+DRQ|'Dril-Quip' OR $DRQ
+DRE|'Duke Realty' OR $DRE
+EXP|'Eagle Materials' OR $EXP
+EWBC|'East West Bancorp' OR $EWBC
+EV|'Eaton Vance' OR $EV
+ENDP|'Endo Pharmaceuticals Hldg' OR $ENDP
+EGN|'Energen' OR $EGN
+ENR|'Energizer Hldgs' OR $ENR
+EQIX|'Equinix In' OR $EQIX
+EQY|'Equity One' OR $EQY
+ESS|'Essex Property Trust' OR $ESS
+ESL|'Esterline Technologies' OR $ESL
+RE|'Everest Re Group Ltd' OR $RE
+XLS|'Exelis' OR $XLS
+EXR|'Extra Space Storage' OR $EXR
+FCN|'FTI Consulting' OR $FCN
+FDS|'FactSet Research System' OR $FDS
+FICO|'Fair Isaac & Co' OR $FICO
+FCS|'Fairchild Semiconductor Intl A' OR $FCS
+FRT|'Federal Realty Invt Trust' OR $FRT
+FII|'Federated Investors Inc B' OR $FII
+FNF|'Fidelity National Financial' OR $FNF
+FAF|'First American Financial' OR $FAF
+FHN|'First Horizon National' OR $FHN
+FNFG|'First Niagara Finl Group' OR $FNFG
+FMER|'FirstMerit' OR $FMER
+FLO|'Flowers Foods' OR $FLO
+FL|'Foot Locker' OR $FL
+FBHS|'Fortune Brands Home & Security' OR $FBHS
+FULT|'Fulton Financial Corp (PA)' OR $FULT
+GMT|'GATX' OR $GMT
+BGC|'General Cable' OR $BGC
+GWR|'Genesee & Wyoming' OR $GWR
+IT|'Gartner' OR $IT
+GNTX|'Gentex' OR $GNTX
+GPN|'Global Payments' OR $GPN
+GGG|'Graco' OR $GGG
+GVA|'Granite Construction' OR $GVA
+GXP|'Great Plains Energy' OR $GXP
+GMCR|'Green Mountain Coffee Roasters' OR $GMCR
+GHL|'Greenhill & Co' OR $GHL
+GEF|'Greif Bros' OR $GEF
+GES|'Guess?' OR $GES
+HBHC|'Hancock Hldgs Co' OR $HBHC
+HCC|'HCC Insurance Hldgs' OR $HCC
+HNI|'HNI Corp' OR $HNI
+HFC|'HollyFrontier Corporation' OR $HFC
+HBI|'Hanesbrands' OR $HBI
+THG|'Hanover Insurance Group' OR $THG
+HTSI|'Harris Teeter Supermarkets' OR $HTSI
+HSC|'Harsco' OR $HSC
+HE|'Hawaiian Electric Industries' OR $HE
+HMA|'Health Management Asscs' OR $HMA
+HNT|'Health Net' OR $HNT
+HLX|'Helix Energy Solutions Group' OR $HLX
+HSIC|'Henry Schein' OR $HSIC
+HIW|'Highwoods Properties' OR $HIW
+HRC|'Hill-Rom Holdings' OR $HRC
+HMSY|'HMS Holdings' OR $HMSY
+HOLX|'Hologic' OR $HOLX
+HME|'Home Properties of New York' OR $HME
+HPT|'Hospitality Properties Trust' OR $HPT
+HSNI|'HSN' OR $HSNI
+HUBB|'Hubbell Inc B' OR $HUBB
+JBHT|'Hunt (JB) Transport Services' OR $JBHT
+HII|'Huntington Ingalls Industries' OR $HII
+IDA|'Idacorp' OR $IDA
+IEX|'IDEX' OR $IEX
+IDXX|'IDEXX Laboratories' OR $IDXX
+INFA|'Informatica' OR $INFA
+IM|'Ingram Micro Inc A' OR $IM
+INGR|'Ingredion' OR $INGR
+IDTI|'Integrated Device Technology' OR $IDTI
+IDCC|'InterDigital' OR $IDCC
+ISIL|'Intersil Corp A' OR $ISIL
+IBOC|'Intl Bancshares' OR $IBOC
+IRF|'Intl Rectifier' OR $IRF
+ISCA|'Intl Speedway Corp A' OR $ISCA
+IPI|'Intrepid Potash' OR $IPI
+ITRI|'Itron' OR $ITRI
+ITT|'ITT' OR $ITT
+JKHY|'Jack Henry & Associates' OR $JKHY
+JNS|'Janus Capital Group' OR $JNS
+JAH|'Jarden' OR $JAH
+JBLU|'JetBlue Airways' OR $JBLU
+JWA|'John Wiley & Sons Inc. 'A'' OR $JWA
+JLL|'Jones Lang Lasalle' OR $JLL
+KBH|'KB Home' OR $KBH
+KBR|'KBR Inc' OR $KBR
+KMPR|'Kemper' OR $KMPR
+KMT|'Kennametal' OR $KMT
+KRC|'Kilroy Realty' OR $KRC
+KEX|'Kirby' OR $KEX
+LAMR|'Lamar Advertising Co-A' OR $LAMR
+LANC|'Lancaster Colony' OR $LANC
+LSTR|'Landstar System' OR $LSTR
+LDOS|'Leidos Holdings' OR $LDOS
+LPS|'Lender Processing Services' OR $LPS
+LII|'Lennox International' OR $LII
+LXK|'Lexmark International' OR $LXK
+LRY|'Liberty Property Trust' OR $LRY
+LTM|'Life Time Fitness' OR $LTM
+LPNT|'Lifepoint Hospitals' OR $LPNT
+LECO|'Lincoln Electric Holdings' OR $LECO
+LKQ|'LKQ Corp' OR $LKQ
+LPX|'Louisiana-Pacific' OR $LPX
+MDC|'MDC Holdings' OR $MDC
+MDU|'MDU Resources Group' OR $MDU
+MCRS|'MICROS Systems' OR $MCRS
+MSM|'MSC Industrial Direct A' OR $MSM
+CLI|'Mack-Cali Realty' OR $CLI
+MNK|'Mallinckrodt plc' OR $MNK
+MAN|'Manpower' OR $MAN
+MANT|'Mantech Intl Corp A' OR $MANT
+MLM|'Martin Marietta Materials' OR $MLM
+MASI|'Masimo' OR $MASI
+MATX|'Matson' OR $MATX
+MATW|'Matthews Intl Corp A' OR $MATW
+MD|'Mednax' OR $MD
+MENT|'Mentor Graphics' OR $MENT
+MCY|'Mercury General' OR $MCY
+MDP|'Meredith' OR $MDP
+MTD|'Mettler-Toledo Intl' OR $MTD
+MLHR|'Miller, Herman' OR $MLHR
+MSA|'Mine Safety Appliances' OR $MSA
+MTX|'Minerals Technologies' OR $MTX
+MHK|'Mohawk Industries' OR $MHK
+MWW|'Monster Worldwide' OR $MWW
+MSCI|'MSCI' OR $MSCI
+MUSA|'Murphy USA' OR $MUSA
+NCR|'NCR' OR $NCR
+NFG|'National Fuel Gas' OR $NFG
+NATI|'National Instruments' OR $NATI
+NNN|'National Retail Properties' OR $NNN
+NSR|'NeuStar Inc-Class A' OR $NSR
+NYCB|'New York Community Bancorp' OR $NYCB
+NYT|'New York Times Co-A' OR $NYT
+NEU|'NewMarket' OR $NEU
+NDSN|'Nordson' OR $NDSN
+NVE|'NV Energy' OR $NVE
+NVR|'NVR' OR $NVR
+OGE|'OGE Energy' OR $OGE
+OIS|'Oil States Intl' OR $OIS
+OII|'Oceaneering Intl' OR $OII
+ODP|'Office Depot' OR $ODP
+ORI|'Old Republic Intl' OR $ORI
+OLN|'Olin' OR $OLN
+OHI|'Omega Healthcare Investors' OR $OHI
+OCR|'Omnicare' OR $OCR
+OSK|'Oshkosh' OR $OSK
+OMI|'Owens & Minor' OR $OMI
+PKG|'Packaging Corp of America' OR $PKG
+PNRA|'Panera Bread Co A' OR $PNRA
+PMTC|'Parametric Technology' OR $PMTC
+PTEN|'Patterson-UTI Energy' OR $PTEN
+PLT|'Plantronics' OR $PLT
+PNM|'PNM Resources' OR $PNM
+PII|'Polaris Industries' OR $PII
+PLCM|'Polycom' OR $PLCM
+POST|'Post Holdings' OR $POST
+PCH|'Potlatch' OR $PCH
+PRI|'Primerica' OR $PRI
+PB|'Prosperity Bancshares' OR $PB
+PL|'Protective Life' OR $PL
+PMTC|'PTC' OR $PMTC
+STR|'Questar' OR $STR
+RFMD|'RF Micro Devices' OR $RFMD
+RPM|'RPM International' OR $RPM
+RAX|'Rackspace Hosting' OR $RAX
+RJF|'Raymond James Financial' OR $RJF
+RYN|'Rayonier' OR $RYN
+O|'Realty Income' OR $O
+RBC|'Regal Beloit' OR $RBC
+REG|'Regency Centers' OR $REG
+RGS|'Regis' OR $RGS
+RGA|'Reinsurance Group of America' OR $RGA
+RS|'Reliance Steel & Aluminum Co.' OR $RS
+RCII|'Rent-A-Center' OR $RCII
+RMD|'ResMed' OR $RMD
+RVBD|'Riverbed Technology' OR $RVBD
+RKT|'Rock Tenn Company -Cl A' OR $RKT
+ROL|'Rollins' OR $ROL
+ROSE|'Rosetta Resources' OR $ROSE
+ROVI|'Rovi' OR $ROVI
+RGLD|'Royal Gold' OR $RGLD
+SEIC|'SEI Investments' OR $SEIC
+SLG|'SL Green Realty' OR $SLG
+SM|'SM Energy Co' OR $SM
+SWI|'SolarWinds' OR $SWI
+SPW|'SPX' OR $SPW
+STE|'STERIS' OR $STE
+SUNE|'SunEdison' OR $SUNE
+SIVB|'SVB Financial Group' OR $SIVB
+SKS|'Saks' OR $SKS
+SLXP|'Salix Pharmaceuticals Ltd' OR $SLXP
+SCHL|'Scholastic' OR $SCHL
+SAIC|'Science Applications International' OR $SAIC
+SGMS|'Scientific Games Corp A' OR $SGMS
+SMG|'Scotts Co A' OR $SMG
+SMTC|'Semtech' OR $SMTC
+SNH|'Senior Housing Properties Trst' OR $SNH
+SXT|'Sensient Technologies' OR $SXT
+SCI|'Service Corp Intl' OR $SCI
+SBNY|'Signature Bank NY' OR $SBNY
+SIG|'Signet Jewelers Ltd' OR $SIG
+SLGN|'Silgan Holdings' OR $SLGN
+SLAB|'Silicon Laboratories' OR $SLAB
+SWKS|'Skyworks Solutions' OR $SWKS
+SLH|'Solera Holdings' OR $SLH
+SON|'Sonoco Products Co' OR $SON
+BID|'Sotheby's' OR $BID
+SFG|'StanCorp Financial Group' OR $SFG
+STLD|'Steel Dynamics' OR $STLD
+SPN|'Superior Energy Services' OR $SPN
+SVU|'Supervalu' OR $SVU
+SNPS|'Synopsys' OR $SNPS
+SNV|'Synovus Financial Corp (GA)' OR $SNV
+TCB|'TCF Financial Corp (MN)' OR $TCB
+TCO|'Taubman Centers' OR $TCO
+TIBX|'TIBCO Software' OR $TIBX
+TECD|'Tech Data' OR $TECD
+TECH|'Techne' OR $TECH
+TFX|'Teleflex' OR $TFX
+TDS|'Telephone & Data Systems' OR $TDS
+TPX|'Tempur Sealy Intl' OR $TPX
+TEX|'Terex' OR $TEX
+BCO|'The Brink's Co' OR $BCO
+HSH|'The Hillshire Brands Co.' OR $HSH
+THO|'Thor Industries' OR $THO
+THOR|'Thoratec' OR $THOR
+TDW|'Tidewater' OR $TDW
+TKR|'Timken Co' OR $TKR
+TOL|'Toll Brothers' OR $TOL
+TR|'Tootsie Roll Industries' OR $TR
+TW|'Towers Watson & Co' OR $TW
+TSCO|'Tractor Supply Co' OR $TSCO
+TRMB|'Trimble Navigation Ltd' OR $TRMB
+TRN|'Trinity Industries' OR $TRN
+TGI|'Triumph Group' OR $TGI
+TRMK|'Trustmark Corp (MS)' OR $TRMK
+TUP|'Tupperware' OR $TUP
+TWTC|'TW Telecom' OR $TWTC
+UDR|'UDR Inc' OR $UDR
+UGI|'UGI corp' OR $UGI
+URS|'URS corp' OR $URS
+UTIW|'UTi Worldwide' OR $UTIW
+VCI|'Valassis Communications' OR $VCI
+UA|'Under Armour Inc A' OR $UA
+UNT|'Unit' OR $UNT
+UNFI|'United Natural Foods' OR $UNFI
+URI|'United Rentals' OR $URI
+UTHR|'United Therapeutics' OR $UTHR
+UVV|'Universal Corp/VA' OR $UVV
+UHS|'Universal Health Services-B' OR $UHS
+WOOF|'VCA Antech' OR $WOOF
+VLY|'Valley National Bancorp' OR $VLY
+VMI|'Valmont Industries' OR $VMI
+VAL|'Valspar' OR $VAL
+VCLK|'Valueclick' OR $VCLK
+VVC|'Vectren' OR $VVC
+PAY|'VeriFone Systems' OR $PAY
+VSH|'Vishay Intertechnology' OR $VSH
+WGL|'WGL Holdings' OR $WGL
+WWAV|'WhiteWave Foods Co' OR $WWAV
+WMS|'WMS Industries' OR $WMS
+WWD|'Woodward' OR $WWD
+WRB|'WR Berkley' OR $WRB
+WAB|'Wabtec' OR $WAB
+WDR|'Waddell & Reed Finl A' OR $WDR
+WAFD|'Washington Federal' OR $WAFD
+WCN|'Waste Connections' OR $WCN
+WSO|'Watsco' OR $WSO
+WBS|'Webster Financial Corp (CT)' OR $WBS
+WRI|'Weingarten Realty Investors' OR $WRI
+WCG|'Wellcare Health Plans' OR $WCG
+WEN|'Wendy's Co/The' OR $WEN
+WERN|'Werner Enterprises' OR $WERN
+WABC|'Westamerica Bancorporatn (CA)' OR $WABC
+WR|'Westar Energy' OR $WR
+WEX|'WEX' OR $WEX
+WSM|'Williams-Sonoma' OR $WSM
+INT|'World Fuel Services' OR $INT
+WOR|'Worthington Industries' OR $WOR
+WRB|'WR Berkley' OR $WRB
+ZBRA|'Zebra Technologies Corp-Cl A' OR $ZBRA
