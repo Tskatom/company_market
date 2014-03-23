@@ -13,12 +13,12 @@ if len(sys.argv) > 2:
 else:
     s_rule = set()
 
-with open("Flu_rule.txt", "w") as w:
+with open("vehicle_components_rule.txt", "w") as w:
     for item in rule:
         delta = 24 
         if item in s_rule:
             continue
-        w.write("%s|%d|%s\n" % (item.replace('"', "").replace(" ","_"), delta, item))
+        w.write("%s|%d|%s\n" % (item.replace('"', "").replace(" ","_"), delta, item.strip().lower()))
 
 if __name__ == "__main__":
     pass

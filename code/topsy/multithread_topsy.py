@@ -35,15 +35,18 @@ class Spider(Thread):
                 url = task["url"]
                 output = task["output"]
                 start_task = time.time()
-                print "Starting ingest [%s]" % output
-                result = urllib2.urlopen(url)
-                block_size = 8192
-                with open(output, "w") as ow:
-                    while True:
-                        buffer = result.read(block_size)
-                        if not buffer:
-                            break
-                        ow.write(buffer)
+                if not os.path.exists(output):
+                    print "Starting ingest [%s]" % output
+                    result = urllib2.urlopen(url)
+                    block_size = 8192
+                    with open(output, "w") as ow:
+                        while True:
+                            buffer = result.read(block_size)
+                            if not buffer:
+                                break
+                            ow.write(buffer)
+                else:
+                    print "SKIP [%s]" % output
             except:
                 logging.warning("Error:[%s]" % sys.exc_info()[0])
                 #clean the output file

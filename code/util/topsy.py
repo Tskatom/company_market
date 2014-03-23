@@ -52,7 +52,6 @@ class Api(object):
 
     def _request(self, url):
         try:
-            print url
             r = requests.get(url)
         except Exception as e:
             raise TopsyError('Failed to handle the topsy api request[%s]' % url)
@@ -71,7 +70,7 @@ class Api(object):
     def bulkTweets(self, 
             q=None,
             limit=10,
-            include_enrichment_all=None,
+            include_enrichment_all=1,
             sample=10,
             mintime=None,
             maxtime=None,
