@@ -10,7 +10,7 @@ from datetime import timedelta, datetime
 import calendar
 
 start_month = "2011-01"
-end_month = "2014-01"
+end_month = "2012-01"
 
 def add_month(year_month, num):
     year, month = map(int, year_month.split("-"))
@@ -27,7 +27,7 @@ while cursor <= end_month:
     end = "%s-%d" %(cursor, calendar.monthrange(year, month)[1])
 
     out = os.path.join(sys.argv[1], cursor.replace("-", ""))
-    command = "python multithread_topsy.py %s $1 %s %s" % (out, start, end)
+    command = "nohup python multithread_topsy.py %s $1 %s %s &" % (out, start, end)
     cursor = add_month(cursor, 1)
     shells.append(command)
 

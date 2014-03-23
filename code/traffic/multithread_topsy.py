@@ -114,7 +114,7 @@ def main():
     if len(sys.argv) > 5:
         num_threads = int(sys.argv[5])
     else:
-        num_threads = 30
+        num_threads = 10
     if not os.path.exists(out_dir):
         os.mkdir(out_dir)
 

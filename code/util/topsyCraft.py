@@ -23,14 +23,20 @@ def parse_args():
             help='Num of cores to use')
     ap.add_argument('--out', type=str,
             help="output folder")
+    ap.add_argument('--region',type=str,
+            help="region code")
     ap.add_argument('--mintime', type=str,
             help='start time, format yyyy-mm-dd')
     ap.add_argument('--maxtime', type=str,
             help='end time, format yyyy-mm-dd')
+    ap.add_argument('--split', action='store_true',
+            help='whether split the output into subfolders')
+    ap.add_argument('--tweet_types', type=str,
+            help='result types:tweet, reply, retweet')
     arg = ap.parse_args()
     return arg
 
-def create_task(start, end, rule, prefix, out_dir, queue, delta=24):
+def create_task(start, end, rule, region, prefix, out_dir, queue, delta=24, tweet_types=None):
     """Create api task
     args:
         start:
@@ -65,11 +71,12 @@ def create_task(start, end, rule, prefix, out_dir, queue, delta=24):
         param = {}
         param['limit'] = 20000
         param['sample'] = 100
-        param['region'] = '225,223'
+        param['region'] = region
         include_enrichment_all = 1
         param['q'] = rule
         param['mintime'] = datetime.strptime(start, from_format).strftime(to_format)
         param['maxtime'] = datetime.strptime(cursor, from_format).strftime(to_format)
+        param['tweet_types'] = tweet_types
         
         output = os.path.join(out_dir, "%s_%s_%s" % (prefix, 
             start, cursor))
@@ -87,8 +94,8 @@ def bulkIngest(task):
             for r in result:
                 ow.write(r + "\n")
     except Exception as e:
-        print "Error:[%s]" % e
-        logging.warning("Error:[%s]" % e) 
+        print "Error:[%s]" % sys.exc_info()[0]
+        logging.warning("Error:[%s]" % sys.exc_info()[0]) 
 
 def worker(task_que):
     for task in iter(task_que.get, 'STOP'):
@@ -102,9 +109,8 @@ def main():
     end = arg.maxtime
     outfolder = arg.out
     rule_file = arg.rule
-
-    if not os.path.exists(outfolder):
-        os.mkdir(outfolder)
+    region = arg.region
+    tweet_types = arg.tweet_types
 
     #create slaver process
     for i in range(core_num):
@@ -114,8 +120,10 @@ def main():
     with open(rule_file) as rf:
         for i, line in enumerate(rf):
             name, delta, rule = line.strip().split("|")
-            out_dir = os.path.join(outfolder, str(i % 60))
-            create_task(start, end, rule, name, out_dir, task_queue, float(delta))
+            out_dir = os.path.join(outfolder, name)
+            if not os.path.exists(out_dir):
+                os.mkdir(out_dir)
+            create_task(start, end, rule, region, name, out_dir, task_queue, float(delta), tweet_types)
 
     #send stop signal to slaver process
     for i in range(core_num):

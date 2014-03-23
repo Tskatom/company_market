@@ -1,32 +1,8 @@
-python multithread_topsy.py /raid/rupen/wei/201308 $1 2013-08-01 2013-08-31
-python multithread_topsy.py /raid/rupen/wei/201307 $1 2013-07-01 2013-07-31
-python multithread_topsy.py /raid/rupen/wei/201306 $1 2013-06-01 2013-06-30
-python multithread_topsy.py /raid/rupen/wei/201305 $1 2013-05-01 2013-05-31
-python multithread_topsy.py /raid/rupen/wei/201304 $1 2013-04-01 2013-04-30
-python multithread_topsy.py /raid/rupen/wei/201303 $1 2013-03-01 2013-03-31
-python multithread_topsy.py /raid/rupen/wei/201302 $1 2013-02-01 2013-02-28
-python multithread_topsy.py /raid/rupen/wei/201301 $1 2013-01-01 2013-01-31
-python multithread_topsy.py /raid/rupen/wei/201212 $1 2012-12-01 2012-12-31
-python multithread_topsy.py /raid/rupen/wei/201211 $1 2012-11-01 2012-11-30
-python multithread_topsy.py /raid/rupen/wei/201210 $1 2012-10-01 2012-10-31
-python multithread_topsy.py /raid/rupen/wei/201209 $1 2012-09-01 2012-09-30
-python multithread_topsy.py /raid/rupen/wei/201208 $1 2012-08-01 2012-08-31
-python multithread_topsy.py /raid/rupen/wei/201207 $1 2012-07-01 2012-07-31
-python multithread_topsy.py /raid/rupen/wei/201206 $1 2012-06-01 2012-06-30
-python multithread_topsy.py /raid/rupen/wei/201205 $1 2012-05-01 2012-05-31
-python multithread_topsy.py /raid/rupen/wei/201204 $1 2012-04-01 2012-04-30
-python multithread_topsy.py /raid/rupen/wei/201203 $1 2012-03-01 2012-03-31
-python multithread_topsy.py /raid/rupen/wei/201202 $1 2012-02-01 2012-02-29
-python multithread_topsy.py /raid/rupen/wei/201201 $1 2012-01-01 2012-01-31
-python multithread_topsy.py /raid/rupen/wei/201112 $1 2011-12-01 2011-12-31
-python multithread_topsy.py /raid/rupen/wei/201111 $1 2011-11-01 2011-11-30
-python multithread_topsy.py /raid/rupen/wei/201110 $1 2011-10-01 2011-10-31
-python multithread_topsy.py /raid/rupen/wei/201109 $1 2011-09-01 2011-09-30
-python multithread_topsy.py /raid/rupen/wei/201108 $1 2011-08-01 2011-08-31
-python multithread_topsy.py /raid/rupen/wei/201107 $1 2011-07-01 2011-07-31
-python multithread_topsy.py /raid/rupen/wei/201106 $1 2011-06-01 2011-06-30
-python multithread_topsy.py /raid/rupen/wei/201105 $1 2011-05-01 2011-05-31
-python multithread_topsy.py /raid/rupen/wei/201104 $1 2011-04-01 2011-04-30
-python multithread_topsy.py /raid/rupen/wei/201103 $1 2011-03-01 2011-03-31
-python multithread_topsy.py /raid/rupen/wei/201102 $1 2011-02-01 2011-02-28
-python multithread_topsy.py /raid/rupen/wei/201101 $1 2011-01-01 2011-01-31
+nohup python multithread_topsy.py /raid/rupen/wei/201201 $1 2012-01-01 2012-01-31 &
+nohup python multithread_topsy.py /raid/rupen/wei/201112 $1 2011-12-01 2011-12-31 &
+nohup python multithread_topsy.py /raid/rupen/wei/201111 $1 2011-11-01 2011-11-30 &
+nohup python multithread_topsy.py /raid/rupen/wei/201110 $1 2011-10-01 2011-10-31 &
+nohup python multithread_topsy.py /raid/rupen/wei/201109 $1 2011-09-01 2011-09-30 &
+nohup python multithread_topsy.py /raid/rupen/wei/201107 $1 2011-07-01 2011-07-31 &
+nohup python multithread_topsy.py /raid/rupen/wei/201105 $1 2011-05-01 2011-05-31 &
+nohup python multithread_topsy.py /raid/rupen/wei/201104 $1 2011-04-01 2011-04-30 &
