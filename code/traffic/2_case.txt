@@ -1,0 +1,2 @@
+cadillac_ats|24|cadillac AND ats
+dodge_dart|24|dodge AND dart
