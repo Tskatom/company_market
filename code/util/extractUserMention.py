@@ -62,8 +62,9 @@ def merge_files(files):
     for f in files:
         name = f.split('/')[-1][0:-30]
         if name != p_name and p_name is not None:
-            yield (name, p_sets)
+            yield (p_name, p_sets)
             p_sets = []
+            p_name = None
         p_name = name
         p_sets.append(f)
     yield (p_name, p_sets)
