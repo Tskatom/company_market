@@ -94,7 +94,7 @@ def bulkIngest(task):
             for r in result:
                 ow.write(r + "\n")
     except Exception as e:
-        print "Error:[%s]" % sys.exc_info()[0]
+        print sys.exc_info()
         logging.warning("Error:[%s]" % sys.exc_info()[0]) 
 
 def worker(task_que):
@@ -120,7 +120,7 @@ def main():
     with open(rule_file) as rf:
         for i, line in enumerate(rf):
             name, delta, rule = line.strip().split("|")
-            out_dir = os.path.join(outfolder, str(i % 60))
+            out_dir = os.path.join(outfolder, name)
             if not os.path.exists(out_dir):
                 os.mkdir(out_dir)
             create_task(start, end, rule, region, name, out_dir, task_queue, float(delta), tweet_types)
