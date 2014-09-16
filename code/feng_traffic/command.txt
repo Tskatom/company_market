@@ -1,0 +1,2 @@
+#location query
+http://api.topsy.com/v2/content/location.json?location=United%20States&types=country&apikey=09C43A9B270A470B8EB8F2946A9369F3

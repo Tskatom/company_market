@@ -1,0 +1,15 @@
+crowded|1|crowded
+predestrian|1|pedestrian
+traffic_ex_web_internet_blog_mobile_accident|1|traffic -web -internet -blog -mobile -accident
+car_accident|1|car accident
+traffic_accident|1|traffic accident
+accident_ex_update_reported_car_traffic_byaccident|1|accident -update -reported -car -traffic -"by accident"
+accident_update|1|accident update
+accident_reported|1|accident reported
+congestion|1|congestion
+driver|1|driver
+stuck|1|stuck
+block|1|block
+crash|1|crash
+car_wreck|1|car wreck
+alert|1|alert

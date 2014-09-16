@@ -48,7 +48,7 @@ def crawl():
 	rule = "'3D Systems' OR $DDD"
 	terminal = "2013-04-01"
 	company = "DDD"
-	out_dir = "/home/weiwang/workspace/data"
+	out_dir = "./test"
 	end = start
 	while end < terminal:
 		try:

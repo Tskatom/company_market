@@ -1,0 +1,2 @@
+1|2013-04-01|2013-06-01|1|"white genocide" OR antiwhite OR antiracist OR (Tibet AND genocide) OR (assimilate AND white)
+17|2012-12-01|2014-07-01|1|(ukrain AND Russia) OR (sanction AND Yanukovych) OR ("security assurance" AND Ukraine)
